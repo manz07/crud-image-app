@@ -1,0 +1,62 @@
+/* Bikin judul dialog di tengah */
+.dialog-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Buat dialog bisa di-scroll */
+  .dialog-container {
+    max-height: 60vh; /* Batasi tinggi agar bisa scroll */
+    overflow-y: auto;
+    padding: 10px 20px;
+  }
+  
+  /* Input field full width */
+  .full-width {
+    width: 100%;
+  }
+  
+  /* Style tombol */
+  .delete-btn {
+    background-color: #d32f2f !important;
+    color: white !important;
+    transition: background 0.3s;
+  }
+  
+  .delete-btn:hover {
+    background-color: #b71c1c !important;
+  }
+  
+  .update-btn {
+    background-color: #1976d2 !important;
+    color: white !important;
+    transition: background 0.3s;
+  }
+  
+  .update-btn:hover {
+    background-color: #135ba1 !important;
+  }
+  
+  .cancel-btn {
+    background-color: rgb(201, 201, 201) !important;
+    color: black !important;
+    transition: background 0.3s;
+  }
+  
+  .cancel-btn:hover {
+    background-color: rgb(170, 170, 170) !important;
+  }
+  
+  /* Bikin tombol lebih rapi */
+  .dialog-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+  }
+  
+  .right-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  

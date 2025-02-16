@@ -1,0 +1,82 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px 5px;
+    grid-auto-rows: minmax(200px, auto);
+    padding: 50px;
+    padding: 50px; 
+    padding-left: 200px;
+    padding-right: 200px;
+    max-width: 2000px; /* ✅ Batasi lebar agar tidak ada ruang kosong */
+    margin: auto; /* ✅ Pusatkan tanpa padding kiri & kanan */
+  }
+  
+  .image-card {
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+    display: flex;
+  }
+  
+  .image-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  .upload-container {
+    position: sticky;
+    bottom: 16px;
+    width: 100%;
+    background: transparent;
+    padding: 8px;
+    text-align: center;
+    z-index: 10;
+}
+
+.upload-btn {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.upload-btn:hover {
+    background-color:rgb(56, 46, 65);
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.edit-overlay {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.image-container:hover .edit-overlay {
+  opacity: 1;
+}
+
+.edit-overlay button {
+  color: white;
+  border: none;
+  background: transparent;
+}
+
+  

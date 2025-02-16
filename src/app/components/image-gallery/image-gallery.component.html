@@ -1,0 +1,18 @@
+<div class="gallery">
+  <div class="image-card" *ngFor="let cat of kucings$ | async" 
+      (mouseenter)="cat.hover = true" 
+      (mouseleave)="cat.hover = false">
+      
+      <div class="image-container">
+          <img [src]="cat.url" alt="Cat Image" />
+
+          <div class="edit-overlay" *ngIf="cat.hover">
+              <button mat-button color="accent" (click)="openEditDialog(cat)">✏ Edit</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="upload-container">
+  <button class="upload-btn" mat-raised-button color="primary" [routerLink]="'/upload'"> + Add Images</button>
+</div>
